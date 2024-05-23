@@ -3,9 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agung calculator</title>
+    <title>Agung Assignment calculator</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <h1 style="text-align: center;">Welcome to Acalculator</h1>
+        <section>
+            <p style="text-align: center;">
+                hello guys, Welcome to Acalculator :) 
+            </p>
+            <p style="text-align: center;">
+                Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar
+            </p>
+        </section>
+    </header>
+
+    <section>
+       <section>
+
+        <!--ini title general -->
+
+        <div class="section-content">
+            <h3>Segitiga</h3>
+        </div>
+        <button type="button" id="switch-keliling">Switch ke keliling Segitiga</button>
+        <Section>
+            <!-- Content Atas Luas Segitiga -->
+            <section>
+                <div class="section-content">
+                    <h2>Luas Segitiga</h2>
+                </div>
+                <div class="formula-img">
+                    <img src="https://cdn-brilio-net.akamaized.net/real/2023/10/16/2130004/rumus-luas-segitiga-sama-sisi.png" alt="">
     
+                </div>
+    
+                <p>Rumus Luas Segitiga yaitu:</p>
+                <p style="text-align: center;">L=1/2 x a x t </p>
+                Di mana : <div>
+                L = Luas<div> 
+                a = Panjang Alas <div>   
+                t = Tinggi  
+                     
+                
+            </section>
+            
+        </Section>
+        <!-- Content Pemisah Garis -->
+        <hr/>
+        <!-- Content Bawah Luasa Segitiga -->
+        <section>
+            <header>
+                <h2>Hitung Luas Segitiga</h2>
+               </header>
+
+               <form>
+                <section>
+                    <section>
+                        <div>
+                            <label for="">A:</label><input type="number" placeholder="Nilai Alas" id="alas">
+                        </div>
+                        <div>
+                            <label for="">T:</label><input type="number" placeholder="Nilai Tinggi" id="tinggi">
+                        </div>
+                    </section>
+                </section>
+                    <div id="output"></div>
+                    <button type="button" id="hitung-btn">Hitung</button>
+                    <button onclick="document.getElementById('myInput').value = ''">Reset</button>
+
+<input type="number" id="myInput">
+
+            </form>
+        </section>
+       </section>
+      
+    </section>
+<br>
+    <Section>
+        <!-- Content Atas Keliling Segitiga -->
+        <section>
+            <div class="section-content">
+                <h2>Keliling Segitiga</h2>
+            </div>
+            <div class="formula-img">
+                <img src="https://o-cdn-cas.sirclocdn.com/parenting/images/DB761D86-B41E-49A1-AF26-6EE30BD8A.width-800.format-webp.webp" alt="">
+
+            </div>
+
+            <p>Rumus Keliling Segitiga yaitu:</p>
+            <p style="text-align: center;">K = S1 + S2 + s3 </p>
+            Di mana : <div>
+            K = Keliling<div> 
+            S1 = Sisi A <div>   
+            S2 = Sisi B <div>
+            S3 = Sisi C      
+                 
+            
+        </section>
+        
+    </Section>
+    <!-- Content Pemisah Garis -->
+    <hr/>
+    <!-- Content Bawah Luasa Segitiga -->
+    <section>
+        <header>
+            <h2>Hitung Keliling Segitiga</h2>
+           </header>
+
+           <form>
+            <section>
+                <section>
+                    <div>
+                        <label for="">S1:</label><input type="number" placeholder="Sisi A" id="sisiA">
+                    </div>
+                    <div>
+                        <label for="">S2:</label><input type="number" placeholder="Sisi B" id="sisiB">
+                    </div>
+                    <div>
+                        <label for="">S3:</label><input type="number" placeholder="Sisi C" id="sisiC">
+                    </div>
+                </section>
+            </section>
+                <div id="output2"></div>
+                <button type="button" id="hitung-btn2">Hitung2</button>
+                <button type="button" id="reset-btn">Reset</button>
+        </form>
+    </section>
+    <script src="./js/script.js"></script>
 </body>
 </html>
